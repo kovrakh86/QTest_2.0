@@ -1,0 +1,29 @@
+{{#extend "_master-layout"}}
+    {{#content "body"}}
+        {{#block "header"}}
+            {{> ../../components/header/header}}
+        {{/block}}
+        <main class="pcg-main-content" id="maincontent">
+            {{#block "main-content"}}
+            {{/block}}
+        </main>
+        {{#block "footer"}}
+            {{> ../../components/footer/footer}}
+        {{/block}}
+    {{/content}}
+    {{#content "scripts" mode="append"}}
+        <script type="text/javascript">
+
+             document.querySelector('.int-post-managment__add').addEventListener('click', function(){
+                 document.querySelector('.int-new-item-modal-container').style.visibility = 'visible';
+             });
+             document.querySelector('.int-new-item-modal__cross').addEventListener('click', function(){
+                 document.querySelector('.int-new-item-modal-container').style.visibility = 'hidden';
+             });
+
+            $jquery(function() {
+
+            });
+        </script>
+    {{/content}}
+{{/extend}}

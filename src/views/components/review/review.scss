@@ -1,0 +1,76 @@
+.int-review{
+    background-color: $white-color;
+    padding: 2rem;
+    color: $main-font-color;
+    font-size: 1.4rem;
+}
+.int-review--flex{
+    justify-content: space-between;
+}
+.int-review__personal-photo .int-personal-photo__link{
+    @media screen and (min-width: 780px){
+        height: 6rem;
+        width: 6rem;
+    }
+}
+.int-review__personal-photo{
+    padding-right: 1rem;
+}
+.int-review-info .int-flex{
+    justify-content: space-between;
+}
+.int-review-info__name{
+    margin-right: 1rem;
+    color: $main-font-color;
+    &:hover, &:focus{
+        color: $main-font-color;
+        text-decoration: underline;
+        text-shadow:0px 0px 1px $main-font-color;
+    }
+    @media screen and (min-width: 780px){
+        margin-right: 2.5rem;
+    }
+}
+
+.int-review-info__status-name{
+    background-color: $body-color;
+    padding: .7rem;
+}
+.int-review-info__title-item{
+    color: $blue-color;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.int-review-info__text{
+    color: $black-color;
+}
+.int-tags{
+    padding: 0;
+    margin: 0;
+}
+.int-tags.int-flex{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.int-tags__item{
+    list-style-type: none;
+    &:after{
+        content: ', ';
+        padding-right: .1rem;
+    }
+    &:last-child:after{
+        content: '';
+    }
+}
+.int-tags__link{
+    color: $main-font-color;
+    font-size: 1.2rem;
+
+}
+.int-tags-icon{
+    color: $main-font-color;
+}
+.int-review-info__tags .int-tags__link:hover{
+    text-decoration: underline;
+    color: $main-font-color;
+}

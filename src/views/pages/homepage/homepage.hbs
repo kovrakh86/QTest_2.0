@@ -1,0 +1,52 @@
+{{#extend "_site-layout" title="Homepage"}}
+    {{#content "main-content"}}
+        <div class="pcg-homepage int-flex" >
+            <!--<div class="int-aside">-->
+                <aside class="pcg-homepage__submenu pcg-submenu">
+                    <div class="pcg-submenu__list">
+                        {{> ../../components/submenu/submenu}}
+                    </div>
+                    <div class="pcg-submenu__list">
+                        {{> ../../components/submenu/submenu}}
+                    </div>
+                    <div class="pcg-submenu__list">
+                        {{> ../../components/submenu/submenu}}
+                    </div>
+                    <div class="pcg-submenu__list">
+                        {{> ../../components/submenu/submenu}}
+                    </div>
+                </aside>
+            <!--</div>-->
+
+                <div class="pcg-homepage__page">
+                    <div class="pcg-homepage__page-title">
+                        {{> ../../components/page-title/page-title}}
+                    </div>
+                    <div class="pcg-homepage__posts-managment">
+                        {{> ../../components/posts-managment/posts-managment}}
+                    </div>
+                    .<div class="pcg-home-page__new-item-modal">
+                    {{> ../../components/new-item-modal/new-item-modal}}
+                    </div>
+                    <div class="pcg-homepage__review-wrapper pcg-review">
+                        <div class="pcg-review__element">
+                            {{> ../../components/review/review variable="Pro"}}
+                        </div>
+                        <div class="pcg-review__element">
+                            {{> ../../components/review/review variable="Member"}}
+                        </div>
+                        <div class="pcg-review__element">
+                            {{> ../../components/review/review variable="Pro"}}
+                        </div>
+                        <div class="pcg-review__element">
+                            {{> ../../components/review/review variable="Member"}}
+                        </div>
+                        <div class="pcg-homepage__pagination pcg-pagination">
+                            {{> ../../components/pagination/pagination}}
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+    {{/content}}
+{{/extend}}

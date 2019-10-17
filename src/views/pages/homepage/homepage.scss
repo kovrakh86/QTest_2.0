@@ -1,0 +1,36 @@
+//.pcg-homepage {
+//    &__navigation {
+//        padding-top: 2.5rem;
+//        padding-bottom: 1rem;
+//    }
+//}
+//.pcg-main-content{
+//    position: relative;
+//}
+.pcg-homepage{
+    box-shadow: 0 0 6px rgba(0,0,0,0.27);
+    max-width: $page-max-width;
+    background-color: $white-color;
+    margin: 0 auto ;
+}
+.pcg-homepage__submenu{
+    display: none;
+    min-width: 18rem;
+    max-width: 18rem;
+    background-color: $aside-bg-color;
+    border-right: 1px solid $aside-border-color;
+    @media screen and (min-width: 780px){
+        display: block;
+    }
+}
+.pcg-homepage__pagination{
+    text-align: center;
+    padding: 1rem 0 3rem;
+    background-color: $white-color;
+}
+.pcg-homepage__page{
+    @media screen and (min-width: 780px){
+        padding-bottom: 10rem;
+    }
+}
+
