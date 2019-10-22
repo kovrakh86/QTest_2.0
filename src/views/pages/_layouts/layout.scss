@@ -1,0 +1,25 @@
+.int-main{
+    max-width: $page-max-width;
+    margin: 0 auto;
+    box-shadow: 0 0 6px rgba(0,0,0,0.27);
+    @include flex(center, auto);
+}
+.int-aside {
+    display: none;
+    min-width: 17.1rem;
+    background-color: $aside-bg-color;
+    border-right: 1px solid $aside-border-color;
+    @media screen and (min-width: 780px) {
+        display: block;
+    }
+    @media screen and (min-width: 966px) {
+        min-width: 17.8125%;
+    }
+}
+.int-main-content{
+    background-color: $white-color;
+    @media screen and (min-width: 780px) {
+        margin-bottom: 9rem;
+    }
+
+}

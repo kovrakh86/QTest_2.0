@@ -1,15 +1,13 @@
-.int-new-item-modal-container{
-    display: flex;
+.int-new-item-modal--tonner{
     visibility: hidden;
-    justify-content: center;
-    align-items: center;
+    @include flex(center,center);
     position: fixed;
     top: 0;
     left: 0;
     margin: auto;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
 }
 .int-new-item-modal{
@@ -22,50 +20,25 @@
         width: 40%;
     }
 }
-.int-new-item-modal-container__heading{
+.int-new-item-modal__heading{
     font-size: 2.5rem;
 }
 .int-new-item-modal__cross{
-    position: absolute;
-    right: 0.1rem;
-    top: 0;
-    &:before{
-        display: inline-block;
-        transform: rotate(45deg);
-        content: " ";
-        height: 2rem;
-        width: 2rem;
-        border-bottom: 3px solid $white-color;
-    }
-    &:after{
-        display: inline-block;
-        transform: rotate(-45deg);
-        content: " ";
-        height: 2rem;
-        width: 2rem;
-        border-bottom: 3px solid $white-color;
-        position: absolute;
-        right: 1.2rem;
-    }
-    &:hover{
-        cursor: pointer;
-    }
-    @media screen and (min-width: 780px){
-        right: 2rem;
-        top: 2rem;
-    }
+    @include cross();
 }
 .int-new-item-modal__form{
+    @include flex(flex-start, stretch);
     flex-direction: column;
-    *{
-        margin: 0.5rem 0;
-    }
-    .int-flex{
-        justify-content: space-around;
-    }
+}
+.int-new-item-modal__form-item{
+    margin: 0.5rem 0;
+}
+.int-new-item-modal__btns{
+    @include flex(space-around, stretch);
 }
 .int-new-item-modal__btn{
     width: 30%;
     background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
     border-radius: 6px;
+    margin: 1rem 0;
 }

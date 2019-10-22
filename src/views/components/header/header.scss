@@ -1,19 +1,34 @@
 .int-header-content{
     background-color: $theme-color-dark;
 }
+
 .int-header{
     max-width: $page-max-width;
-    padding: 1rem 2.5rem;
+    padding: 1rem 1.5rem;
     margin: 0 auto;
+    @include flex(space-between, center);
+
+    @media screen and (min-width: 780px) {
+        padding: 1.8rem 2.7rem;
+    }
+    @media screen and (min-width: 1000px) {
+        padding: 1.5rem 0.6rem;
+    }
 }
-.int-header *, .int-nav *{
-     color: $white-color;
-     font-size: 1.8rem;
+
+.int-header__item *, .int-nav__item *{
+    font-size: 1.8rem;
     @media screen and (min-width: 780px){
         font-size: 1.4rem;
     }
- }
-.int-header *{
+}
+
+.int-nav__item *{
+    color: $white-color;
+}
+
+.int-header__item *{
+    color: $white-color;
     @media screen and (min-width: 780px){
         color: $main-font-color;
         &:hover{
@@ -21,147 +36,107 @@
         }
     }
 }
-.int-header__flex{
-    justify-content: space-between;
-    align-items: center;
+
+.int-header__item--mobile{
+    @include mobile();
 }
-.int-header__menu-icon{
+
+.int-header__item--desktop{
+    @include desktop();
+}
+
+.int-header-logo{
     @media screen and (min-width: 780px){
-        display: none;
+        flex-basis: 50.1%;
     }
-}
-.int-icon{
-    @media screen and (min-width: 780px){
-        font-size: 2.1rem;
+    @media screen and (min-width: 1000px){
+        flex-basis: 61.5%;
     }
-}
-.int-header__logo{
-    @media screen and (min-width: 780px){
-        flex-basis: 50%;
-    }
-}
-.int-choose-city{
-    position: relative;
-    &:after{
-        position: absolute;
-        top: .7rem;
-        right: .7rem;
-        display: inline-block;
-        transform: rotate(45deg);
-        content: " ";
-        height: .7rem;
-        width: .7rem;
-        border-right: 1px solid $main-font-color;
-        border-bottom: 1px solid $main-font-color;
-
-    }
-    &:hover:after{
-         border-right: 1px solid $white-color;
-         border-bottom: 1px solid $white-color;
-    }
-
 }
 
-.int-choose-city__select{
-    border:none;
-    position: relative;
-    background-color: inherit;
-    outline: none;
-    padding-right: 2rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -ms-appearance: none;
-    z-index: 5;
+.int-header-logo__link{
+     display: block;
+ }
 
-}
-.int-logo__link{
-    display: block;
-}
-.int-logo__link-image{
+.int-header-logo__image{
     display: block;
     height: 3rem;
 }
-.int-header__choose-city{
-    display: none;
-    @media screen and (min-width: 780px){
-        display: block;
-    }
-}
-.int-header__page-title{
-    @media screen and (min-width: 780px){
-        display: none;
-    }
+
+.int-header__item--choose-city{
+    @include li-select(1rem, 0.7rem, auto, 0.5rem, 0.5rem, 1px, $main-font-color ,$white-color);
 }
 
-.int-header__message-icon{
-    display: none;
+.int-header__select-city{
+    @include select(1.6rem);
+}
+
+.int-header__choose-city{
     @media screen and (min-width: 780px){
-        display: block;
+        margin-right: 2.5rem;
     }
+
 }
-.int-header__notifications-icon{
-    display: none;
-    @media screen and (min-width: 780px){
-        display: block;
-    }
-    @media screen and (min-width:1000px){
-        margin-right: -5rem;
-    }
+
+.int-header__item--notifications{
+    margin: 0  1.5rem 0 2rem;
 }
-.int-personal-photo--flex{
-    align-items: center;
-}
-.int-header__personal-photo{
+
+.int-header-person{
+    @include flex(flex-start, center);
     &:hover{
-        *{
+        .int-header-person__name{
             color: $white-color;
         }
     }
-}
-.int-personal-photo__link{
-    display: block;
-    width: 3rem;
-    height: 3rem;
-    overflow: hidden;
-    border-radius: 0.4rem;
-}
-.int-personal-photo__image{
-    width: auto;
-    height: 100%;
-}
-.int-header__personal-photo>.int-personal-photo__name{
-    display: none;
-
     @media screen and (min-width: 780px){
-        display: block;
-        padding-right: 1rem;
+        margin: 0 2rem 0 3rem;
     }
 }
+
+.int-header-link--person{
+    @include person-link(3rem, 3rem);
+}
+
+.int-header-person__image{
+    @include person-image();
+}
+
+.int-header-person__name{
+    padding-right: 0.9rem;
+}
+
+
+
+
 .int-nav-content{
     background-color: $nav-color;
 }
 .int-nav{
     margin: 0 auto;
-    display: none;
-    padding: 0 ;
+    padding: 0;
     max-width: $page-max-width;
-    @media screen and (min-width: 780px){
-    display: block;
-    }
+    position: relative;
 }
-.int-nav__flex{
+
+.int-nav__cross{
+    @include cross();
+    display: none;
+}
+.int-nav__list{
+    @include flex(flex-start, center);
     flex-direction: column;
-    align-items: center;
     @media screen and (min-width: 780px){
         flex-direction: row;
     }
 }
-.int-nav__list-item-link{
+
+.int-nav__link{
     display: inline-block;
-    padding: 1.4rem;
+    padding: 0.95rem;
 }
-.int-nav__list-item-link--active, .int-nav__list-item-link:hover{
+
+.int-nav__link--active, .int-nav__link:hover{
     position: relative;
     &:before{
         content: " ";
@@ -174,6 +149,7 @@
         left: 0;
     }
 }
-.int-nav__list-item{
+
+.int-nav__item{
     padding: 0;
 }

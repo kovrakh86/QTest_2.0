@@ -1,27 +1,37 @@
 .int-review{
-    background-color: $white-color;
-    padding: 2rem;
-    color: $main-font-color;
-    font-size: 1.4rem;
+     background-color: $white-color;
+     padding: 1.5rem 3rem;
+     color: $main-font-color;
+     font-size: 1.4rem;
+     @include flex(space-between, stretch);
+     @media screen and (min-width: 780px){
+         padding: 1.5rem 3rem;
+     }
 }
-.int-review--flex{
-    justify-content: space-between;
-}
-.int-review__personal-photo .int-personal-photo__link{
+.int-review__link--person{
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    @include person-link(3rem, 3rem);
     @media screen and (min-width: 780px){
-        height: 6rem;
-        width: 6rem;
+        @include person-link(6rem, 6rem);
+        margin-right: 1.5rem;
     }
 }
-.int-review__personal-photo{
-    padding-right: 1rem;
+.int-review__photo{
+    @include person-image();
 }
-.int-review-info .int-flex{
-    justify-content: space-between;
+
+
+.int-review-main__info,
+.int-review-main__review-numbers,
+.int-review-main__user-info{
+    @include flex(space-between, center);
 }
-.int-review-info__name{
+
+.int-review-main__name{
     margin-right: 1rem;
     color: $main-font-color;
+    font-size: 1.2rem;
     &:hover, &:focus{
         color: $main-font-color;
         text-decoration: underline;
@@ -32,23 +42,37 @@
     }
 }
 
-.int-review-info__status-name{
+.int-review-main__status{
+    display: inline-block;
     background-color: $body-color;
-    padding: .7rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    @media screen and (min-width: 780px){
+        border-radius: 0.4rem;
+        padding: 0.6rem 1.5rem;
+    }
 }
-.int-review-info__title-item{
-    color: $blue-color;
-    font-size: 1.6rem;
-    font-weight: 600;
+
+.int-review-main__review-numbers{
+    font-size: 1.2rem;
 }
-.int-review-info__text{
+.int-review-main__title-item{
+     color: $blue-color;
+     font-size: 1.6rem;
+     font-weight: 600;
+ }
+.int-review-main__text{
     color: $black-color;
+    line-height: 2rem;
+    margin-bottom: .6rem;
 }
 .int-tags{
     padding: 0;
     margin: 0;
 }
-.int-tags.int-flex{
+.int-tags{
+    display: inline-flex;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
@@ -65,12 +89,11 @@
 .int-tags__link{
     color: $main-font-color;
     font-size: 1.2rem;
-
 }
 .int-tags-icon{
     color: $main-font-color;
 }
-.int-review-info__tags .int-tags__link:hover{
+.int-review-main__tags .int-tags__link:hover{
     text-decoration: underline;
     color: $main-font-color;
 }

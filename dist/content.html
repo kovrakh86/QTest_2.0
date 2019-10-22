@@ -17,82 +17,125 @@
     <script src="content/js/app.js" type="text/javascript"></script>
 </head>
     <body class="pcg-content-wrap">
-            <div class="int-header-content">
-                <header class="int-header">
-                    <ul class="int-header__flex int-flex">
-                        <li class="int-header__menu-icon int-menu-icon">
-                            <span class="int-menu-icon__icon-menu-burger icon-menu-burger int-icon"></span>
-                        </li>
-                        <li class="int-header__logo int-logo">
-                            <a class="int-logo__link" href="#">
-                                <img src="content/images/website/logo.png?v=253c4ae11b0824c823c14623df8bdaad" alt="" class="int-logo__link-image int-logo">
-                            </a>
-                        </li>
-                        <li class="int-header__choose-city int-choose-city">
-                            <select name="city-select" id="int-city-select" class="int-choose-city__select">
-                                <option value="new-york">New York</option>
-                                <option value="minsk">Minsk</option>
-                                <option value="grodno">Grodno</option>
-                            </select>
-                        <li class="int-header__page-title">Page title</li>
-                        <li class="int-header__notifications-icon int-notifications-icon ">
-                            <a class="int-notifications-icon__link" href="#">
-                                <span class="int-notifications-icon__icon-notifications icon-notifications int-icon"></span>
-                            </a>
-                        </li>
-                        <li class="int-header__message-icon int-message-icon">
-                            <a class="int-message-icon__link" href="#">
-                                <span class="int-message-icon__icon-message icon-message int-icon"></span>
-                            </a>
-                        </li>
-                        <li class="int-header__personal-photo int-personal-photo int-flex int-personal-photo--flex">
-                            <span class="int-personal-photo__name">User name</span>
-                            <a class="int-personal-photo__link " href="#">
-                                <img src="content/images/website/personal-photo.png?v=6ef93b92b525212e146136d0c4caf3ea" alt="" class="int-personal-photo__image">
-                            </a>
-                        </li>
-                        <li class="int-header__search-icon int-search-icon">
-                            <a class="int-search-icon__link" href="#">
-                                <span class="int-search-icon__icon-search icon-search int-icon"></span>
-                            </a>
-                        </li>
-                    </ul>
+            <header class="int-header-content">
+                <ul class="int-header">
+                    <li class="int-header__item int-header__item--mobile">
+                        <span class="int-header__menu-burger icon-menu-burger int-icon"></span>
+                    </li>
+                    <li class="int-header__item int-header-logo">
+                        <a class="int-header-logo__link" href="#">
+                            <img src="content/images/website/logo.png?v=253c4ae11b0824c823c14623df8bdaad" alt="" class="int-header-logo__image">
+                        </a>
+                    </li>
+                    <li class="int-header__item int-header__item--choose-city int-header__item--desktop">
+                        <select name="city-select" id="int-city-select" class="int-header__select-city ">
+                            <option value="new-york">New York</option>
+                            <option value="minsk">Minsk</option>
+                            <option value="grodno">Grodno</option>
+                        </select>
+                    <li class="int-header__item int-header__item--mobile">Page title</li>
+                    <li class="int-header__item int-header__item--notifications int-header__item--desktop">
+                        <a class="int-header__link" href="#">
+                            <span class="icon-notifications int-icon"></span>
+                        </a>
+                    </li>
+                    <li class="int-header__item int-header__item--desktop">
+                        <a class="int-header__link" href="#">
+                            <span class="icon-message int-icon"></span>
+                        </a>
+                    </li>
+                    <li class="int-header__item int-header-person">
+                        <span class="int-header-person__name int-header__item--desktop">User name</span>
+                        <a class="int-header__link int-header-link--person" href="#">
+                            <img src="content/images/website/personal-photo.png?v=6ef93b92b525212e146136d0c4caf3ea" alt="" class="int-header-person__image">
+                        </a>
+                    </li>
+                    <li class="int-header__item">
+                        <a class="int-header__link" href="#">
+                            <span class="icon-search int-icon"></span>
+                        </a>
+                    </li>
+                </ul>
             
-                </header>
-            </div>
-            <div class="int-nav-content">
-                <nav class="int-nav">
-                    <ul class="int-nav__flex int-flex ">
-                        <li class="int-nav__list-item int-nav-item">
-                            <a class="int-nav__list-item-link int-nav__list-item-link--active" href="#">Menu item</a>
-                        </li>
-                        <li class="int-nav__list-item int-nav-item">
-                            <a class="int-nav__list-item-link" href="#">Menu item</a>
-                        </li>
-                        <li class="int-nav__list-item int-nav-item">
-                            <a class="int-nav__list-item-link" href="#">Menu item</a>
-                        </li>
-                        <li class="int-nav__list-item int-nav-item">
-                            <a class="int-nav__list-item-link" href="#">Menu item</a>
-                        </li>
-                        <li class="int-nav__list-item int-nav-item">
-                            <a class="int-nav__list-item-link" href="#">Menu item</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                <div class="int-nav-content int-header__item--desktop ">
+                    <nav class="int-nav">
+                        <span class="int-nav__cross"></span>
+                        <ul class="int-nav__list">
+                            <li class="int-nav__item int-nav-item">
+                                <a class="int-nav__link int-nav__link--active" href="#">Menu item</a>
+                            </li>
+                            <li class="int-nav__item int-nav-item">
+                                <a class="int-nav__link" href="#">Menu item</a>
+                            </li>
+                            <li class="int-nav__item int-nav-item">
+                                <a class="int-nav__link" href="#">Menu item</a>
+                            </li>
+                            <li class="int-nav__item int-nav-item">
+                                <a class="int-nav__link" href="#">Menu item</a>
+                            </li>
+                            <li class="int-nav__item int-nav-item">
+                                <a class="int-nav__link" href="#">Menu item</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
             
-        <main class="pcg-main-content" id="maincontent">
+        <section class="int-main">
+            <aside  class=" int-aside">
+                        <ul>
+                            <li class="int-aside__item">
+                                <a href="#" class="int-aside__link int-aside__link--strong">
+                                    <strong>Submenu</strong>
+                                </a>
+                            </li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                        </ul>
+                        <ul>
+                            <li class="int-aside__item">
+                                <a href="#" class="int-aside__link int-aside__link--strong">
+                                    <strong>Submenu</strong>
+                                </a>
+                            </li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                        </ul>
+                        <ul>
+                            <li class="int-aside__item">
+                                <a href="#" class="int-aside__link int-aside__link--strong">
+                                    <strong>Submenu</strong>
+                                </a>
+                            </li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                        </ul>
+                        <ul>
+                            <li class="int-aside__item">
+                                <a href="#" class="int-aside__link int-aside__link--strong">
+                                    <strong>Submenu</strong>
+                                </a>
+                            </li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                        </ul>
+            </aside>
+            <main class="int-main-content" id="maincontent">
         
         <div class="pcg-content">
             
         </div>
 		
-        </main>
+            </main>
+        </section>
             <div class="int-footer-content">
                 <footer class="int-footer">
-                    <div class="int-footer__top">
-                        <ul class="int-flex int-footer__top--flex">
+                    <nav class="int-footer__top">
+                        <ul>
                             <li class="int-footer_items">
                                 <a href="#" class="int-footer__items-link">
                                     About
@@ -119,11 +162,9 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="int-footer__bottom int-flex">
-                        <div class="int-footer__logo">
-                            <img src="content/images/website/logo-footer.png?v=83d567e0105b455e0c67e23c2d9d0a5c" alt="logo">
-                        </div>
+                    </nav>
+                    <div class="int-footer__bottom">
+                        <img class="int-footer__logo" src="content/images/website/logo-footer.png?v=83d567e0105b455e0c67e23c2d9d0a5c" alt="logo">
                         <p class="int-footer__rights">© 2015. Qulix Systems. All rights reserved.</p>
                     </div>
                 </footer>
@@ -131,15 +172,26 @@
             
         <script type="text/javascript">
 
-             document.querySelector('.int-post-managment__add').addEventListener('click', function(){
-                 document.querySelector('.int-new-item-modal-container').style.visibility = 'visible';
+             document.querySelector('.int-post-managment__item--add').addEventListener('click', function(){
+                 document.querySelector('.int-new-item-modal--tonner').style.visibility = 'visible';
              });
+
              document.querySelector('.int-new-item-modal__cross').addEventListener('click', function(){
-                 document.querySelector('.int-new-item-modal-container').style.visibility = 'hidden';
+                 document.querySelector('.int-new-item-modal--tonner').style.visibility = 'hidden';
              });
+//            $jquery(function() {
+//
+//            });
+        </script>
 
-            $jquery(function() {
+        <script type="text/javascript">
+            document.querySelector('.int-header__menu-burger').addEventListener('click', function(){
+                document.querySelector('.int-nav-content').style.display = 'block';
+                document.querySelector('.int-nav__cross').style.display = 'inline';
+            });
 
+            document.querySelector('.int-nav__cross').addEventListener('click', function(){
+                document.querySelector('.int-nav-content').style.display = 'none';
             });
         </script>
     </body>

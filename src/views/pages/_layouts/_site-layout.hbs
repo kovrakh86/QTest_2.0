@@ -3,26 +3,47 @@
         {{#block "header"}}
             {{> ../../components/header/header}}
         {{/block}}
-        <main class="pcg-main-content" id="maincontent">
-            {{#block "main-content"}}
-            {{/block}}
-        </main>
+        <section class="int-main">
+            <aside  class=" int-aside">
+                {{#block "aside"}}
+                    {{#repeat 4}}
+                        {{> ../../components/submenu/submenu}}
+                    {{/repeat}}
+                {{/block}}
+            </aside>
+            <main class="int-main-content" id="maincontent">
+                {{#block "main-content"}}
+                {{/block}}
+            </main>
+        </section>
         {{#block "footer"}}
             {{> ../../components/footer/footer}}
         {{/block}}
     {{/content}}
+
     {{#content "scripts" mode="append"}}
         <script type="text/javascript">
 
-             document.querySelector('.int-post-managment__add').addEventListener('click', function(){
-                 document.querySelector('.int-new-item-modal-container').style.visibility = 'visible';
+             document.querySelector('.int-post-managment__item--add').addEventListener('click', function(){
+                 document.querySelector('.int-new-item-modal--tonner').style.visibility = 'visible';
              });
+
              document.querySelector('.int-new-item-modal__cross').addEventListener('click', function(){
-                 document.querySelector('.int-new-item-modal-container').style.visibility = 'hidden';
+                 document.querySelector('.int-new-item-modal--tonner').style.visibility = 'hidden';
              });
+//            $jquery(function() {
+//
+//            });
+        </script>
 
-            $jquery(function() {
+        <script type="text/javascript">
+            document.querySelector('.int-header__menu-burger').addEventListener('click', function(){
+                document.querySelector('.int-nav-content').style.display = 'block';
+                document.querySelector('.int-nav__cross').style.display = 'inline';
+            });
 
+            document.querySelector('.int-nav__cross').addEventListener('click', function(){
+                document.querySelector('.int-nav-content').style.display = 'none';
             });
         </script>
     {{/content}}

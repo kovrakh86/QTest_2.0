@@ -58,10 +58,15 @@ button{
 }
 body{
     font-family: 'Open Sans', Arial, sans-serif;
-    //max-width: $page-max-width;
     margin: 0 auto;
     background-color: $body-color;
 
 
 }
+.int-header .int-icon, .int-post-managment .int-icon{
+    font-size: 2rem;
+}
+//.int-icon:before{
+//    margin: 0;
+//}
 //font-family: Georgia, Times, "Times New Roman", serif;

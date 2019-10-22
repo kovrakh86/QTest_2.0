@@ -17,324 +17,271 @@
     <script src="content/js/app.js" type="text/javascript"></script>
 </head>
     <body class="pcg-content-wrap">
-            <div class="int-header-content">
-                <header class="int-header">
-                    <ul class="int-header__flex int-flex">
-                        <li class="int-header__menu-icon int-menu-icon">
-                            <span class="int-menu-icon__icon-menu-burger icon-menu-burger int-icon"></span>
-                        </li>
-                        <li class="int-header__logo int-logo">
-                            <a class="int-logo__link" href="#">
-                                <img src="content/images/website/logo.png?v=253c4ae11b0824c823c14623df8bdaad" alt="" class="int-logo__link-image int-logo">
-                            </a>
-                        </li>
-                        <li class="int-header__choose-city int-choose-city">
-                            <select name="city-select" id="int-city-select" class="int-choose-city__select">
-                                <option value="new-york">New York</option>
-                                <option value="minsk">Minsk</option>
-                                <option value="grodno">Grodno</option>
-                            </select>
-                        <li class="int-header__page-title">Page title</li>
-                        <li class="int-header__notifications-icon int-notifications-icon ">
-                            <a class="int-notifications-icon__link" href="#">
-                                <span class="int-notifications-icon__icon-notifications icon-notifications int-icon"></span>
-                            </a>
-                        </li>
-                        <li class="int-header__message-icon int-message-icon">
-                            <a class="int-message-icon__link" href="#">
-                                <span class="int-message-icon__icon-message icon-message int-icon"></span>
-                            </a>
-                        </li>
-                        <li class="int-header__personal-photo int-personal-photo int-flex int-personal-photo--flex">
-                            <span class="int-personal-photo__name">User name</span>
-                            <a class="int-personal-photo__link " href="#">
-                                <img src="content/images/website/personal-photo.png?v=6ef93b92b525212e146136d0c4caf3ea" alt="" class="int-personal-photo__image">
-                            </a>
-                        </li>
-                        <li class="int-header__search-icon int-search-icon">
-                            <a class="int-search-icon__link" href="#">
-                                <span class="int-search-icon__icon-search icon-search int-icon"></span>
-                            </a>
-                        </li>
-                    </ul>
+            <header class="int-header-content">
+                <ul class="int-header">
+                    <li class="int-header__item int-header__item--mobile">
+                        <span class="int-header__menu-burger icon-menu-burger int-icon"></span>
+                    </li>
+                    <li class="int-header__item int-header-logo">
+                        <a class="int-header-logo__link" href="#">
+                            <img src="content/images/website/logo.png?v=253c4ae11b0824c823c14623df8bdaad" alt="" class="int-header-logo__image">
+                        </a>
+                    </li>
+                    <li class="int-header__item int-header__item--choose-city int-header__item--desktop">
+                        <select name="city-select" id="int-city-select" class="int-header__select-city ">
+                            <option value="new-york">New York</option>
+                            <option value="minsk">Minsk</option>
+                            <option value="grodno">Grodno</option>
+                        </select>
+                    <li class="int-header__item int-header__item--mobile">Page title</li>
+                    <li class="int-header__item int-header__item--notifications int-header__item--desktop">
+                        <a class="int-header__link" href="#">
+                            <span class="icon-notifications int-icon"></span>
+                        </a>
+                    </li>
+                    <li class="int-header__item int-header__item--desktop">
+                        <a class="int-header__link" href="#">
+                            <span class="icon-message int-icon"></span>
+                        </a>
+                    </li>
+                    <li class="int-header__item int-header-person">
+                        <span class="int-header-person__name int-header__item--desktop">User name</span>
+                        <a class="int-header__link int-header-link--person" href="#">
+                            <img src="content/images/website/personal-photo.png?v=6ef93b92b525212e146136d0c4caf3ea" alt="" class="int-header-person__image">
+                        </a>
+                    </li>
+                    <li class="int-header__item">
+                        <a class="int-header__link" href="#">
+                            <span class="icon-search int-icon"></span>
+                        </a>
+                    </li>
+                </ul>
             
-                </header>
-            </div>
-            <div class="int-nav-content">
-                <nav class="int-nav">
-                    <ul class="int-nav__flex int-flex ">
-                        <li class="int-nav__list-item int-nav-item">
-                            <a class="int-nav__list-item-link int-nav__list-item-link--active" href="#">Menu item</a>
-                        </li>
-                        <li class="int-nav__list-item int-nav-item">
-                            <a class="int-nav__list-item-link" href="#">Menu item</a>
-                        </li>
-                        <li class="int-nav__list-item int-nav-item">
-                            <a class="int-nav__list-item-link" href="#">Menu item</a>
-                        </li>
-                        <li class="int-nav__list-item int-nav-item">
-                            <a class="int-nav__list-item-link" href="#">Menu item</a>
-                        </li>
-                        <li class="int-nav__list-item int-nav-item">
-                            <a class="int-nav__list-item-link" href="#">Menu item</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            
-        <main class="pcg-main-content" id="maincontent">
-        <div class="pcg-homepage int-flex" >
-            
-                <aside class="pcg-homepage__submenu pcg-submenu">
-                    <div class="pcg-submenu__list">
-                        <div class="int-submenu">
-                            <ul>
-                                <li class="int-submenu__item int-submenu-item"><a href="#" class="int-submenu__link int-submenu__link--strong">
-                                    <strong>Submenu</strong>
-                                </a></li>
-                                <li class="int-submenu__item"><a href="#" class="int-submenu__link">Submenu item</a></li>
-                                <li class="int-submenu__item"><a href="#" class="int-submenu__link">Submenu item</a></li>
-                                <li class="int-submenu__item"><a href="#" class="int-submenu__link">Submenu item</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="pcg-submenu__list">
-                        <div class="int-submenu">
-                            <ul>
-                                <li class="int-submenu__item int-submenu-item"><a href="#" class="int-submenu__link int-submenu__link--strong">
-                                    <strong>Submenu</strong>
-                                </a></li>
-                                <li class="int-submenu__item"><a href="#" class="int-submenu__link">Submenu item</a></li>
-                                <li class="int-submenu__item"><a href="#" class="int-submenu__link">Submenu item</a></li>
-                                <li class="int-submenu__item"><a href="#" class="int-submenu__link">Submenu item</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="pcg-submenu__list">
-                        <div class="int-submenu">
-                            <ul>
-                                <li class="int-submenu__item int-submenu-item"><a href="#" class="int-submenu__link int-submenu__link--strong">
-                                    <strong>Submenu</strong>
-                                </a></li>
-                                <li class="int-submenu__item"><a href="#" class="int-submenu__link">Submenu item</a></li>
-                                <li class="int-submenu__item"><a href="#" class="int-submenu__link">Submenu item</a></li>
-                                <li class="int-submenu__item"><a href="#" class="int-submenu__link">Submenu item</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="pcg-submenu__list">
-                        <div class="int-submenu">
-                            <ul>
-                                <li class="int-submenu__item int-submenu-item"><a href="#" class="int-submenu__link int-submenu__link--strong">
-                                    <strong>Submenu</strong>
-                                </a></li>
-                                <li class="int-submenu__item"><a href="#" class="int-submenu__link">Submenu item</a></li>
-                                <li class="int-submenu__item"><a href="#" class="int-submenu__link">Submenu item</a></li>
-                                <li class="int-submenu__item"><a href="#" class="int-submenu__link">Submenu item</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </aside>
-            
-
-                <div class="pcg-homepage__page">
-                    <div class="pcg-homepage__page-title">
-                        <section class="int-page-title">
-                            <h1 class="int-page-title__heading">Page title in
-                                <div class="int-choose-city__select--dash">
-                                    <select name="city-select" id="int-city-select" class="int-choose-city__select">
-                                        <option value="new-york">New York</option>
-                                        <option value="minsk">Minsk</option>
-                                        <option value="grodno">Grodno</option>
-                                    </select>
-                                </div>
-                            </h1>
-                        </section>
-                    </div>
-                    <div class="pcg-homepage__posts-managment">
-                        <section class="int-post-managment int-flex int-post-managment--flex">
-                            <div class="int-post-managment__search int-search int-flex">
-                                <span class="int-search__icon icon-search int-icon"></span>
-                                <input type="text" class="int-search__input" id="formGroupSearch" placeholder="Search...">
-                            </div>
-                            <div class="int-post-managment__add int-add int-flex" >
-                                <span class="int-add__icon icon-plus-add int-icon"></span>
-                                <span class="int-add__text">New item</span>
-                            </div>
-                            <div class="int-post-managment__filter int-filter">
-                                <span class="int-filter__icon icon-filter int-icon"></span>
-                            </div>
-                        </section>
-                    </div>
-                    .<div class="pcg-home-page__new-item-modal">
-                    <div class="int-new-item-modal-container">
-                        <div class="int-new-item-modal">
-                            <span class="int-new-item-modal__cross"></span>
-                            <h2 class="int-new-item-modal-container__heading">Write your comment</h2>
-                    
-                            <form action="" class="int-new-item-modal__form int-flex">
-                                <label for="tags">Tags</label>
-                                <input type="text" id="tags" placeholder="tag1, tag2...">
-                                <label for="comment">Comment text</label>
-                                <textarea rows="5" id="comment" placeholder="input your comment"></textarea>
-                                <div class="int-flex">
-                                    <input type="submit" class="int-new-item-modal__btn" >
-                                    <input type="reset" class="int-new-item-modal__btn" >
-                                </div>
-                    
-                            </form>
-                        </div>
-                    </div>
-                    
-                    </div>
-                    <div class="pcg-homepage__review-wrapper pcg-review">
-                        <div class="pcg-review__element">
-                            <article class="int-review int-flex int-review--flex">
-                                <div class="int-review__personal-photo int-personal-photo">
-                                    <a class="int-personal-photo__link " href="#">
-                                        <img src="content/images/website/personal-photo.png?v=6ef93b92b525212e146136d0c4caf3ea" alt="" class="int-personal-photo__image">
-                                    </a>
-                                </div>
-                                <div class="int-review__info int-review-info">
-                                    <div class="int-flex" >
-                                        <div class="int-flex">
-                                            <a class="int-review-info__name int-personal-photo__name" href="#">User name</a>
-                                            <div class="int-review-info__status ">
-                                                <span class="int-review-info__status-name">Pro</span>
-                                            </div>
-                                        </div>
-                                        <div class="int-flex">
-                                            <div class="int-review-info__comments"><span class="icon-chat "></span> 2</div>
-                                            <div class="int-review-info__time"><span class="icon-clock "></span> 20m</div>
-                                        </div>
-                            
-                                    </div>
-                                    <h2 class="int-review-info__title-item">Item title</h2>
-                                    <p class="int-review-info__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. </p>
-                                    <ul class="int-review-info__tags int-tags int-flex">
-                                        <span class="int-tags-icon icon-tag"></span>
-                                        <li class="int-tags__item"><a href="#" class="int-tags__link">tag1</a></li>
-                                        <li class="int-tags__item"><a href="#" class="int-tags__link">tag2</a></li>
-                                        <li class="int-tags__item"><a href="#" class="int-tags__link">tag3</a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="pcg-review__element">
-                            <article class="int-review int-flex int-review--flex">
-                                <div class="int-review__personal-photo int-personal-photo">
-                                    <a class="int-personal-photo__link " href="#">
-                                        <img src="content/images/website/personal-photo.png?v=6ef93b92b525212e146136d0c4caf3ea" alt="" class="int-personal-photo__image">
-                                    </a>
-                                </div>
-                                <div class="int-review__info int-review-info">
-                                    <div class="int-flex" >
-                                        <div class="int-flex">
-                                            <a class="int-review-info__name int-personal-photo__name" href="#">User name</a>
-                                            <div class="int-review-info__status ">
-                                                <span class="int-review-info__status-name">Member</span>
-                                            </div>
-                                        </div>
-                                        <div class="int-flex">
-                                            <div class="int-review-info__comments"><span class="icon-chat "></span> 2</div>
-                                            <div class="int-review-info__time"><span class="icon-clock "></span> 20m</div>
-                                        </div>
-                            
-                                    </div>
-                                    <h2 class="int-review-info__title-item">Item title</h2>
-                                    <p class="int-review-info__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. </p>
-                                    <ul class="int-review-info__tags int-tags int-flex">
-                                        <span class="int-tags-icon icon-tag"></span>
-                                        <li class="int-tags__item"><a href="#" class="int-tags__link">tag1</a></li>
-                                        <li class="int-tags__item"><a href="#" class="int-tags__link">tag2</a></li>
-                                        <li class="int-tags__item"><a href="#" class="int-tags__link">tag3</a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="pcg-review__element">
-                            <article class="int-review int-flex int-review--flex">
-                                <div class="int-review__personal-photo int-personal-photo">
-                                    <a class="int-personal-photo__link " href="#">
-                                        <img src="content/images/website/personal-photo.png?v=6ef93b92b525212e146136d0c4caf3ea" alt="" class="int-personal-photo__image">
-                                    </a>
-                                </div>
-                                <div class="int-review__info int-review-info">
-                                    <div class="int-flex" >
-                                        <div class="int-flex">
-                                            <a class="int-review-info__name int-personal-photo__name" href="#">User name</a>
-                                            <div class="int-review-info__status ">
-                                                <span class="int-review-info__status-name">Pro</span>
-                                            </div>
-                                        </div>
-                                        <div class="int-flex">
-                                            <div class="int-review-info__comments"><span class="icon-chat "></span> 2</div>
-                                            <div class="int-review-info__time"><span class="icon-clock "></span> 20m</div>
-                                        </div>
-                            
-                                    </div>
-                                    <h2 class="int-review-info__title-item">Item title</h2>
-                                    <p class="int-review-info__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. </p>
-                                    <ul class="int-review-info__tags int-tags int-flex">
-                                        <span class="int-tags-icon icon-tag"></span>
-                                        <li class="int-tags__item"><a href="#" class="int-tags__link">tag1</a></li>
-                                        <li class="int-tags__item"><a href="#" class="int-tags__link">tag2</a></li>
-                                        <li class="int-tags__item"><a href="#" class="int-tags__link">tag3</a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="pcg-review__element">
-                            <article class="int-review int-flex int-review--flex">
-                                <div class="int-review__personal-photo int-personal-photo">
-                                    <a class="int-personal-photo__link " href="#">
-                                        <img src="content/images/website/personal-photo.png?v=6ef93b92b525212e146136d0c4caf3ea" alt="" class="int-personal-photo__image">
-                                    </a>
-                                </div>
-                                <div class="int-review__info int-review-info">
-                                    <div class="int-flex" >
-                                        <div class="int-flex">
-                                            <a class="int-review-info__name int-personal-photo__name" href="#">User name</a>
-                                            <div class="int-review-info__status ">
-                                                <span class="int-review-info__status-name">Member</span>
-                                            </div>
-                                        </div>
-                                        <div class="int-flex">
-                                            <div class="int-review-info__comments"><span class="icon-chat "></span> 2</div>
-                                            <div class="int-review-info__time"><span class="icon-clock "></span> 20m</div>
-                                        </div>
-                            
-                                    </div>
-                                    <h2 class="int-review-info__title-item">Item title</h2>
-                                    <p class="int-review-info__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. </p>
-                                    <ul class="int-review-info__tags int-tags int-flex">
-                                        <span class="int-tags-icon icon-tag"></span>
-                                        <li class="int-tags__item"><a href="#" class="int-tags__link">tag1</a></li>
-                                        <li class="int-tags__item"><a href="#" class="int-tags__link">tag2</a></li>
-                                        <li class="int-tags__item"><a href="#" class="int-tags__link">tag3</a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="pcg-homepage__pagination pcg-pagination">
-                            <div class="int-pagination">
-                                <button class="int-pagination__button int-pagination__button--prev">
-                                    <span> Previous</span>
-                                </button>
-                                <button class="int-pagination__button int-pagination__button--next">
-                                    <span> Next</span>
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
+                <div class="int-nav-content int-header__item--desktop ">
+                    <nav class="int-nav">
+                        <span class="int-nav__cross"></span>
+                        <ul class="int-nav__list">
+                            <li class="int-nav__item int-nav-item">
+                                <a class="int-nav__link int-nav__link--active" href="#">Menu item</a>
+                            </li>
+                            <li class="int-nav__item int-nav-item">
+                                <a class="int-nav__link" href="#">Menu item</a>
+                            </li>
+                            <li class="int-nav__item int-nav-item">
+                                <a class="int-nav__link" href="#">Menu item</a>
+                            </li>
+                            <li class="int-nav__item int-nav-item">
+                                <a class="int-nav__link" href="#">Menu item</a>
+                            </li>
+                            <li class="int-nav__item int-nav-item">
+                                <a class="int-nav__link" href="#">Menu item</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
+            </header>
+            
+        <section class="int-main">
+            <aside  class=" int-aside">
+                        <ul>
+                            <li class="int-aside__item">
+                                <a href="#" class="int-aside__link int-aside__link--strong">
+                                    <strong>Submenu</strong>
+                                </a>
+                            </li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                        </ul>
+                        <ul>
+                            <li class="int-aside__item">
+                                <a href="#" class="int-aside__link int-aside__link--strong">
+                                    <strong>Submenu</strong>
+                                </a>
+                            </li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                        </ul>
+                        <ul>
+                            <li class="int-aside__item">
+                                <a href="#" class="int-aside__link int-aside__link--strong">
+                                    <strong>Submenu</strong>
+                                </a>
+                            </li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                        </ul>
+                        <ul>
+                            <li class="int-aside__item">
+                                <a href="#" class="int-aside__link int-aside__link--strong">
+                                    <strong>Submenu</strong>
+                                </a>
+                            </li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                            <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
+                        </ul>
+            </aside>
+            <main class="int-main-content" id="maincontent">
+        <div class="int-page-title">
+            <h1 class="int-page-title__heading">Page title in
+                <div class="int-choose-city--wrap">
+                    <select name="city-select" id="int-city-select" class="int-choose-city">
+                        <option value="new-york">New York</option>
+                        <option value="minsk">Minsk</option>
+                        <option value="grodno">Grodno</option>
+                    </select>
+                </div>
+            </h1>
         </div>
-        </main>
+        <section class="int-post-managment">
+            <div class="int-post-managment__item int-post-managment__item--search ">
+                <span class="icon-search int-post-managment__icon int-post-managment__icon--search"></span>
+                <input type="text" class="int-post-managment__input" id="formGroupSearch" placeholder="Search...">
+            </div>
+            <div class="int-post-managment__item int-post-managment__item--add" >
+                <span class="icon-plus-add int-post-managment__icon"></span>
+                <span class="int-post-managment__new-item-text">New item</span>
+            </div>
+            <div class="int-post-managment__item">
+                <span class="icon-filter int-post-managment__icon"></span>
+            </div>
+        </section>
+        <div class="int-new-item-modal--tonner">
+            <div class="int-new-item-modal">
+                <span class="int-new-item-modal__cross"></span>
+                <h2 class="int-new-item-modal__heading">Write your comment</h2>
+                <form action="" class="int-new-item-modal__form ">
+                    <label for="tags" class="int-new-item-modal__form-item">Tags</label>
+                    <input type="text" id="tags" placeholder="tag1, tag2..." class="int-new-item-modal__form-item">
+                    <label for="comment" class="int-new-item-modal__form-item">Comment text</label>
+                    <textarea rows="5" id="comment" placeholder="input your comment" class="int-new-item-modal__form-item"></textarea>
+                    <div class="int-new-item-modal__btns">
+                        <input type="submit" class="int-new-item-modal__btn" >
+                        <input type="reset" class="int-new-item-modal__btn" >
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <section class="int-homepage__review-wrapper">
+                <article class="int-review">
+                    <a class="int-review__link int-review__link--person " href="#">
+                        <img src="content/images/website/personal-photo.png?v=6ef93b92b525212e146136d0c4caf3ea" alt="" class="int-review__photo">
+                    </a>
+                    <div class="int-review__main int-review-main">
+                        <div class="int-review-main__info">
+                            <div class="int-review-main__user-info">
+                                <a class="int-review-main__name" href="#">User name</a>
+                                <span class="int-review-main__status">Member</span>
+                            </div>
+                            <div class="int-review-main__review-numbers">
+                                <div class="int-review-main__comments"><span class="icon-chat"></span> 2</div>
+                                <div class="int-review-main__time"><span class="icon-clock"></span> 20m</div>
+                            </div>
+                        </div>
+                        <h2 class="int-review-main__title-item">Item title</h2>
+                        <p class="int-review-main__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. </p>
+                        <span class="icon-tag"></span>
+                        <ul class="int-review-main__tags int-tags">
+                            <li class="int-tags__item"><a href="#" class="int-tags__link">tag1</a></li>
+                            <li class="int-tags__item"><a href="#" class="int-tags__link">tag2</a></li>
+                            <li class="int-tags__item"><a href="#" class="int-tags__link">tag3</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="int-review">
+                    <a class="int-review__link int-review__link--person " href="#">
+                        <img src="content/images/website/personal-photo.png?v=6ef93b92b525212e146136d0c4caf3ea" alt="" class="int-review__photo">
+                    </a>
+                    <div class="int-review__main int-review-main">
+                        <div class="int-review-main__info">
+                            <div class="int-review-main__user-info">
+                                <a class="int-review-main__name" href="#">User name</a>
+                                <span class="int-review-main__status">Member</span>
+                            </div>
+                            <div class="int-review-main__review-numbers">
+                                <div class="int-review-main__comments"><span class="icon-chat"></span> 2</div>
+                                <div class="int-review-main__time"><span class="icon-clock"></span> 20m</div>
+                            </div>
+                        </div>
+                        <h2 class="int-review-main__title-item">Item title</h2>
+                        <p class="int-review-main__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. </p>
+                        <span class="icon-tag"></span>
+                        <ul class="int-review-main__tags int-tags">
+                            <li class="int-tags__item"><a href="#" class="int-tags__link">tag1</a></li>
+                            <li class="int-tags__item"><a href="#" class="int-tags__link">tag2</a></li>
+                            <li class="int-tags__item"><a href="#" class="int-tags__link">tag3</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="int-review">
+                    <a class="int-review__link int-review__link--person " href="#">
+                        <img src="content/images/website/personal-photo.png?v=6ef93b92b525212e146136d0c4caf3ea" alt="" class="int-review__photo">
+                    </a>
+                    <div class="int-review__main int-review-main">
+                        <div class="int-review-main__info">
+                            <div class="int-review-main__user-info">
+                                <a class="int-review-main__name" href="#">User name</a>
+                                <span class="int-review-main__status">Member</span>
+                            </div>
+                            <div class="int-review-main__review-numbers">
+                                <div class="int-review-main__comments"><span class="icon-chat"></span> 2</div>
+                                <div class="int-review-main__time"><span class="icon-clock"></span> 20m</div>
+                            </div>
+                        </div>
+                        <h2 class="int-review-main__title-item">Item title</h2>
+                        <p class="int-review-main__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. </p>
+                        <span class="icon-tag"></span>
+                        <ul class="int-review-main__tags int-tags">
+                            <li class="int-tags__item"><a href="#" class="int-tags__link">tag1</a></li>
+                            <li class="int-tags__item"><a href="#" class="int-tags__link">tag2</a></li>
+                            <li class="int-tags__item"><a href="#" class="int-tags__link">tag3</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="int-review">
+                    <a class="int-review__link int-review__link--person " href="#">
+                        <img src="content/images/website/personal-photo.png?v=6ef93b92b525212e146136d0c4caf3ea" alt="" class="int-review__photo">
+                    </a>
+                    <div class="int-review__main int-review-main">
+                        <div class="int-review-main__info">
+                            <div class="int-review-main__user-info">
+                                <a class="int-review-main__name" href="#">User name</a>
+                                <span class="int-review-main__status">Member</span>
+                            </div>
+                            <div class="int-review-main__review-numbers">
+                                <div class="int-review-main__comments"><span class="icon-chat"></span> 2</div>
+                                <div class="int-review-main__time"><span class="icon-clock"></span> 20m</div>
+                            </div>
+                        </div>
+                        <h2 class="int-review-main__title-item">Item title</h2>
+                        <p class="int-review-main__text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. </p>
+                        <span class="icon-tag"></span>
+                        <ul class="int-review-main__tags int-tags">
+                            <li class="int-tags__item"><a href="#" class="int-tags__link">tag1</a></li>
+                            <li class="int-tags__item"><a href="#" class="int-tags__link">tag2</a></li>
+                            <li class="int-tags__item"><a href="#" class="int-tags__link">tag3</a></li>
+                        </ul>
+                    </div>
+                </article>
+            <div class="int-pagination">
+                <button class="int-pagination__button int-pagination__button--prev">
+                    <span> Previous</span>
+                </button>
+                <button class="int-pagination__button int-pagination__button--next">
+                    <span> Next</span>
+                </button>
+            </div>
+        </section>
+            </main>
+        </section>
             <div class="int-footer-content">
                 <footer class="int-footer">
-                    <div class="int-footer__top">
-                        <ul class="int-flex int-footer__top--flex">
+                    <nav class="int-footer__top">
+                        <ul>
                             <li class="int-footer_items">
                                 <a href="#" class="int-footer__items-link">
                                     About
@@ -361,11 +308,9 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="int-footer__bottom int-flex">
-                        <div class="int-footer__logo">
-                            <img src="content/images/website/logo-footer.png?v=83d567e0105b455e0c67e23c2d9d0a5c" alt="logo">
-                        </div>
+                    </nav>
+                    <div class="int-footer__bottom">
+                        <img class="int-footer__logo" src="content/images/website/logo-footer.png?v=83d567e0105b455e0c67e23c2d9d0a5c" alt="logo">
                         <p class="int-footer__rights">© 2015. Qulix Systems. All rights reserved.</p>
                     </div>
                 </footer>
@@ -373,15 +318,26 @@
             
         <script type="text/javascript">
 
-             document.querySelector('.int-post-managment__add').addEventListener('click', function(){
-                 document.querySelector('.int-new-item-modal-container').style.visibility = 'visible';
+             document.querySelector('.int-post-managment__item--add').addEventListener('click', function(){
+                 document.querySelector('.int-new-item-modal--tonner').style.visibility = 'visible';
              });
+
              document.querySelector('.int-new-item-modal__cross').addEventListener('click', function(){
-                 document.querySelector('.int-new-item-modal-container').style.visibility = 'hidden';
+                 document.querySelector('.int-new-item-modal--tonner').style.visibility = 'hidden';
              });
+//            $jquery(function() {
+//
+//            });
+        </script>
 
-            $jquery(function() {
+        <script type="text/javascript">
+            document.querySelector('.int-header__menu-burger').addEventListener('click', function(){
+                document.querySelector('.int-nav-content').style.display = 'block';
+                document.querySelector('.int-nav__cross').style.display = 'inline';
+            });
 
+            document.querySelector('.int-nav__cross').addEventListener('click', function(){
+                document.querySelector('.int-nav-content').style.display = 'none';
             });
         </script>
     </body>

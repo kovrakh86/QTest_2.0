@@ -98,3 +98,99 @@
     color: $theme-color-dark;
     cursor: pointer;
 }
+@mixin flex ($justify-content, $align-items){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+@mixin li-select($top, $right, $bottom, $height, $width, $border-width, $border-color, $hover-color){
+    position: relative;
+    &:after{
+        position: absolute;
+        top: $top;
+        right: $right;
+        bottom: $bottom;
+        display: inline-block;
+        transform: rotate(45deg);
+        content: " ";
+        height: $height;
+        width: $width;
+        border-right: $border-width solid $border-color;
+        border-bottom: $border-width solid $border-color;
+
+    }
+    &:hover:after{
+        border-right: $border-width solid $hover-color;
+        border-bottom: $border-width solid $hover-color;
+    }
+}
+@mixin select($padding-right){
+    border:none;
+    position: relative;
+    background-color: inherit;
+    outline: none;
+    padding-right: $padding-right;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+    z-index: 5;
+}
+@mixin person-image(){
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+@mixin person-link($width, $heigth){
+    display: block;
+    width: $width;
+    height: $heigth;
+    overflow: hidden;
+    border-radius: 0.4rem;
+}
+@mixin cross(){
+    position: absolute;
+    right: 0.1rem;
+    top: 0;
+    cursor: pointer;
+    &:before{
+        display: inline-block;
+        transform: rotate(45deg);
+        content: " ";
+        height: 2rem;
+        width: 2rem;
+        border-bottom: 3px solid $white-color;
+    }
+    &:after{
+        display: inline-block;
+        transform: rotate(-45deg);
+        content: " ";
+        height: 2rem;
+        width: 2rem;
+        border-bottom: 3px solid $white-color;
+        position: absolute;
+        right: 1.2rem;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+    @media screen and (min-width: 780px){
+        right: 2rem;
+        top: 2rem;
+    }
+}
+@mixin mobile(){
+    @media screen and (min-width: 780px){
+        display: none;
+    }
+}
+@mixin desktop(){
+    display: none;
+    @media screen and (min-width: 780px){
+        display: block;
+    }
+}
+@mixin icon($line-height){
+    font-size: 2rem;
+    line-height: $line-height;
+}

@@ -1,20 +1,11 @@
-.int-submenu {
-    ul {
-        padding: 0;
-        margin: 0;
-    }
+.int-aside__item{
+    font-size: 1.4rem;
 }
-.int-submenu__item{
-    list-style: none;
-    font-size: 1.6rem;
-    line-height: 3rem;
-
-}
-.int-submenu__link{
+.int-aside__link{
     color: $theme-color-dark;
-    padding: 0 3rem;
+    padding: 0 2.9rem;
     position: relative;
-
+    line-height: 3rem;
     &:hover,
     &:focus{
         color: $black-color;
@@ -23,18 +14,17 @@
     &:focus:before{
         content: "";
         height: 3rem;
-        border: 2px solid $theme-color-dark;
+        border: 2px solid $main-font-color;
         position: absolute;
         left: 0;
     }
     strong{
         display: inline-block;
         color: $black-color;
-        margin-top: 3rem;
-
+        margin-top: 3.1rem;
     }
 }
-.int-submenu__link--strong{
+.int-aside__link--strong{
     &:hover:before,
     &:focus:before{
         content: '';

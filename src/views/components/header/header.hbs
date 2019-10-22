@@ -1,65 +1,64 @@
-<div class="int-header-content">
-    <header class="int-header">
-        <ul class="int-header__flex int-flex">
-            <li class="int-header__menu-icon int-menu-icon">
-                <span class="int-menu-icon__icon-menu-burger icon-menu-burger int-icon"></span>
-            </li>
-            <li class="int-header__logo int-logo">
-                <a class="int-logo__link" href="#">
-                    <img src="../../../images/logo.png" alt="" class="int-logo__link-image int-logo">
-                </a>
-            </li>
-            <li class="int-header__choose-city int-choose-city">
-                <select name="city-select" id="int-city-select" class="int-choose-city__select">
-                    <option value="new-york">New York</option>
-                    <option value="minsk">Minsk</option>
-                    <option value="grodno">Grodno</option>
-                </select>
-            <li class="int-header__page-title">Page title</li>
-            <li class="int-header__notifications-icon int-notifications-icon ">
-                <a class="int-notifications-icon__link" href="#">
-                    <span class="int-notifications-icon__icon-notifications icon-notifications int-icon"></span>
-                </a>
-            </li>
-            <li class="int-header__message-icon int-message-icon">
-                <a class="int-message-icon__link" href="#">
-                    <span class="int-message-icon__icon-message icon-message int-icon"></span>
-                </a>
-            </li>
-            <li class="int-header__personal-photo int-personal-photo int-flex int-personal-photo--flex">
-                <span class="int-personal-photo__name">User name</span>
-                <a class="int-personal-photo__link " href="#">
-                    <img src="../../../images/personal-photo.png" alt="" class="int-personal-photo__image">
-                </a>
-            </li>
-            <li class="int-header__search-icon int-search-icon">
-                <a class="int-search-icon__link" href="#">
-                    <span class="int-search-icon__icon-search icon-search int-icon"></span>
-                </a>
-            </li>
-        </ul>
+<header class="int-header-content">
+    <ul class="int-header">
+        <li class="int-header__item int-header__item--mobile">
+            <span class="int-header__menu-burger icon-menu-burger int-icon"></span>
+        </li>
+        <li class="int-header__item int-header-logo">
+            <a class="int-header-logo__link" href="#">
+                <img src="../../../images/logo.png" alt="" class="int-header-logo__image">
+            </a>
+        </li>
+        <li class="int-header__item int-header__item--choose-city int-header__item--desktop">
+            <select name="city-select" id="int-city-select" class="int-header__select-city ">
+                <option value="new-york">New York</option>
+                <option value="minsk">Minsk</option>
+                <option value="grodno">Grodno</option>
+            </select>
+        <li class="int-header__item int-header__item--mobile">Page title</li>
+        <li class="int-header__item int-header__item--notifications int-header__item--desktop">
+            <a class="int-header__link" href="#">
+                <span class="icon-notifications int-icon"></span>
+            </a>
+        </li>
+        <li class="int-header__item int-header__item--desktop">
+            <a class="int-header__link" href="#">
+                <span class="icon-message int-icon"></span>
+            </a>
+        </li>
+        <li class="int-header__item int-header-person">
+            <span class="int-header-person__name int-header__item--desktop">User name</span>
+            <a class="int-header__link int-header-link--person" href="#">
+                <img src="../../../images/personal-photo.png" alt="" class="int-header-person__image">
+            </a>
+        </li>
+        <li class="int-header__item">
+            <a class="int-header__link" href="#">
+                <span class="icon-search int-icon"></span>
+            </a>
+        </li>
+    </ul>
 
-    </header>
-</div>
-<div class="int-nav-content">
-    <nav class="int-nav">
-        <ul class="int-nav__flex int-flex ">
-            <li class="int-nav__list-item int-nav-item">
-                <a class="int-nav__list-item-link int-nav__list-item-link--active" href="#">Menu item</a>
-            </li>
-            <li class="int-nav__list-item int-nav-item">
-                <a class="int-nav__list-item-link" href="#">Menu item</a>
-            </li>
-            <li class="int-nav__list-item int-nav-item">
-                <a class="int-nav__list-item-link" href="#">Menu item</a>
-            </li>
-            <li class="int-nav__list-item int-nav-item">
-                <a class="int-nav__list-item-link" href="#">Menu item</a>
-            </li>
-            <li class="int-nav__list-item int-nav-item">
-                <a class="int-nav__list-item-link" href="#">Menu item</a>
-            </li>
-        </ul>
-    </nav>
-</div>
+    <div class="int-nav-content int-header__item--desktop ">
+        <nav class="int-nav">
+            <span class="int-nav__cross"></span>
+            <ul class="int-nav__list">
+                <li class="int-nav__item int-nav-item">
+                    <a class="int-nav__link int-nav__link--active" href="#">Menu item</a>
+                </li>
+                <li class="int-nav__item int-nav-item">
+                    <a class="int-nav__link" href="#">Menu item</a>
+                </li>
+                <li class="int-nav__item int-nav-item">
+                    <a class="int-nav__link" href="#">Menu item</a>
+                </li>
+                <li class="int-nav__item int-nav-item">
+                    <a class="int-nav__link" href="#">Menu item</a>
+                </li>
+                <li class="int-nav__item int-nav-item">
+                    <a class="int-nav__link" href="#">Menu item</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
