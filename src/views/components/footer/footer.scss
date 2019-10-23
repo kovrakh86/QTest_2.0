@@ -32,7 +32,7 @@
     color: $main-font-color;
     display: inline-block;
     line-height: 4.1rem;
-    &:hover{
+    &:hover, &:focus{
         color: $main-font-color;
         text-decoration: underline;
     }

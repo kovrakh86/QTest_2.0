@@ -8206,9 +8206,6 @@ html.pcg-page-wrapper {
   margin: 0 auto;
   background-color: #f2f4f8; }
 
-.pcg-page-wrapper .int-header .int-icon, .pcg-page-wrapper .int-post-managment .int-icon {
-  font-size: 2rem; }
-
 .pcg-page-wrapper .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -8582,6 +8579,10 @@ html.pcg-page-wrapper {
     .pcg-page-wrapper .int-header__item--desktop {
       display: block; } }
 
+.pcg-page-wrapper .int-header__icon {
+  font-size: 2rem;
+  line-height: normal; }
+
 @media screen and (min-width: 780px) {
   .pcg-page-wrapper .int-header-logo {
     -ms-flex-preferred-size: 50.1%;
@@ -8654,7 +8655,7 @@ html.pcg-page-wrapper {
     .pcg-page-wrapper .int-header-person {
       margin: 0 2rem 0 3rem; } }
 
-.pcg-page-wrapper .int-header-link--person {
+.pcg-page-wrapper .int-header-person__link {
   display: block;
   width: 3rem;
   height: 3rem;
@@ -9166,7 +9167,7 @@ html.pcg-page-wrapper {
   .pcg-page-wrapper .int-pagination__button--prev {
     margin-right: 1rem; } }
 
-.pcg-page-wrapper .int-pagination__button--prev :before {
+.pcg-page-wrapper .int-pagination__button--prev:before {
   display: inline-block;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -9177,7 +9178,7 @@ html.pcg-page-wrapper {
   border-bottom: 1px solid #2d313d;
   border-left: 1px solid #2d313d; }
 
-.pcg-page-wrapper .int-pagination__button--next :after {
+.pcg-page-wrapper .int-pagination__button--next:after {
   display: inline-block;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -9212,6 +9213,9 @@ html.pcg-page-wrapper {
 .pcg-page-wrapper .int-aside__link--strong:hover:before, .pcg-page-wrapper .int-aside__link--strong:focus:before {
   content: '';
   border: none; }
+
+.pcg-page-wrapper .int-aside__link--strong strong {
+  font-size: 1.8rem; }
 
 .pcg-page-wrapper .int-footer-content {
   margin: 0 auto;
@@ -9255,7 +9259,7 @@ html.pcg-page-wrapper {
   color: #99a1b3;
   display: inline-block;
   line-height: 4.1rem; }
-  .pcg-page-wrapper .int-footer__items-link:hover {
+  .pcg-page-wrapper .int-footer__items-link:hover, .pcg-page-wrapper .int-footer__items-link:focus {
     color: #99a1b3;
     text-decoration: underline; }
   @media screen and (min-width: 780px) {
@@ -9312,9 +9316,9 @@ html.pcg-page-wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: auto;
-      -ms-flex-align: auto;
-          align-items: auto; }
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
 
 .pcg-page-wrapper .int-aside {
   display: none;

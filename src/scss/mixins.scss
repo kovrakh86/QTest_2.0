@@ -194,3 +194,10 @@
     font-size: 2rem;
     line-height: $line-height;
 }
+@mixin arrow (){
+    display: inline-block;
+    transform: rotate(45deg);
+    content: " ";
+    height: 1rem;
+    width: 1rem;
+}

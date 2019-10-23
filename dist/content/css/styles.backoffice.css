@@ -8253,9 +8253,6 @@ body {
   margin: 0 auto;
   background-color: #f2f4f8; }
 
-.int-header .int-icon, .int-post-managment .int-icon {
-  font-size: 2rem; }
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -8629,6 +8626,10 @@ body {
     .int-header__item--desktop {
       display: block; } }
 
+.int-header__icon {
+  font-size: 2rem;
+  line-height: normal; }
+
 @media screen and (min-width: 780px) {
   .int-header-logo {
     -ms-flex-preferred-size: 50.1%;
@@ -8701,7 +8702,7 @@ body {
     .int-header-person {
       margin: 0 2rem 0 3rem; } }
 
-.int-header-link--person {
+.int-header-person__link {
   display: block;
   width: 3rem;
   height: 3rem;
@@ -9213,7 +9214,7 @@ body {
   .int-pagination__button--prev {
     margin-right: 1rem; } }
 
-.int-pagination__button--prev :before {
+.int-pagination__button--prev:before {
   display: inline-block;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -9224,7 +9225,7 @@ body {
   border-bottom: 1px solid #2d313d;
   border-left: 1px solid #2d313d; }
 
-.int-pagination__button--next :after {
+.int-pagination__button--next:after {
   display: inline-block;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -9259,6 +9260,9 @@ body {
 .int-aside__link--strong:hover:before, .int-aside__link--strong:focus:before {
   content: '';
   border: none; }
+
+.int-aside__link--strong strong {
+  font-size: 1.8rem; }
 
 .int-footer-content {
   margin: 0 auto;
@@ -9302,7 +9306,7 @@ body {
   color: #99a1b3;
   display: inline-block;
   line-height: 4.1rem; }
-  .int-footer__items-link:hover {
+  .int-footer__items-link:hover, .int-footer__items-link:focus {
     color: #99a1b3;
     text-decoration: underline; }
   @media screen and (min-width: 780px) {
@@ -9359,9 +9363,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: auto;
-      -ms-flex-align: auto;
-          align-items: auto; }
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
 
 .int-aside {
   display: none;

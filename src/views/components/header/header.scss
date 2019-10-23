@@ -45,6 +45,10 @@
     @include desktop();
 }
 
+.int-header__icon{
+    @include icon(normal);
+}
+
 .int-header-logo{
     @media screen and (min-width: 780px){
         flex-basis: 50.1%;
@@ -94,7 +98,7 @@
     }
 }
 
-.int-header-link--person{
+.int-header-person__link{
     @include person-link(3rem, 3rem);
 }
 
