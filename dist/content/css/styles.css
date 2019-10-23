@@ -9096,6 +9096,9 @@ html.pcg-page-wrapper {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+.pcg-page-wrapper .int-tags__icon {
+  margin-right: 0.2rem; }
+
 .pcg-page-wrapper .int-tags__item {
   list-style-type: none; }
   .pcg-page-wrapper .int-tags__item:after {

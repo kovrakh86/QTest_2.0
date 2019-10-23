@@ -9143,6 +9143,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+.int-tags__icon {
+  margin-right: 0.2rem; }
+
 .int-tags__item {
   list-style-type: none; }
   .int-tags__item:after {

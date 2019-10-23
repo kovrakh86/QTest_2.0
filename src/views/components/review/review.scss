@@ -76,8 +76,12 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+.int-tags__icon{
+    margin-right: 0.2rem;
+}
 .int-tags__item{
     list-style-type: none;
+
     &:after{
         content: ', ';
         padding-right: .1rem;
