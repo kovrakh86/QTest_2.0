@@ -7,83 +7,74 @@
     padding: 1rem 1.5rem;
     margin: 0 auto;
     @include flex(space-between, center);
-
-    @media screen and (min-width: 780px) {
-        padding: 1.8rem 2.7rem;
-    }
-    @media screen and (min-width: 1000px) {
-        padding: 1.5rem 0.6rem;
-    }
-}
-
-.int-header__item *, .int-nav__item *{
-    font-size: 1.8rem;
-    @media screen and (min-width: 780px){
-        font-size: 1.4rem;
-    }
-}
-
-.int-nav__item *{
-    color: $white-color;
-}
-
-.int-header__item *{
-    color: $white-color;
-    @media screen and (min-width: 780px){
-        color: $main-font-color;
-        &:hover{
-            color: $white-color;
+    &__item *{
+        color: $white-color;
+        @media screen and (min-width: $min-tablet-size){
+            color: $main-font-color;
+            &:hover{
+                color: $white-color;
+            }
         }
     }
+    &__item--mobile{
+        @include mobile();
+    }
+    &__item--desktop{
+        @include desktop();
+    }
+    &__icon{
+        @include icon(normal);
+    }
+    &__item--choose-city{
+        @include li-select(1rem, 0.7rem, auto, 0.5rem, 0.5rem, 1px, $main-font-color ,$white-color);
+    }
+    &__select-city{
+        @include select(1.6rem);
+    }
+
+    &__choose-city{
+        @media screen and (min-width: $min-tablet-size){
+            margin-right: 2.5rem;
+        }
+
+    }
+    &__item--notifications{
+        margin: 0  1.5rem 0 2rem;
+    }
+    &__item *{
+        cursor: pointer;
+    }
+    font-size: 1.8rem;
+    @media screen and (min-width: $min-tablet-size){
+        font-size: 1.4rem;
+    }
+
+    @media screen and (min-width: $min-tablet-size) {
+        padding: 1.8rem 2.7rem;
+    }
+    @media screen and (min-width: 1310px) {
+        padding: 1.5rem 0.6rem;
+    }
+
 }
 
-.int-header__item--mobile{
-    @include mobile();
-}
-
-.int-header__item--desktop{
-    @include desktop();
-}
-
-.int-header__icon{
-    @include icon(normal);
-}
 
 .int-header-logo{
-    @media screen and (min-width: 780px){
-        flex-basis: 50.1%;
+    @media screen and (min-width: $min-tablet-size){
+        flex-basis: 48.4%;
     }
     @media screen and (min-width: 1000px){
-        flex-basis: 61.5%;
-    }
-}
-
-.int-header-logo__link{
-     display: block;
- }
-
-.int-header-logo__image{
-    display: block;
-    height: 3rem;
-}
-
-.int-header__item--choose-city{
-    @include li-select(1rem, 0.7rem, auto, 0.5rem, 0.5rem, 1px, $main-font-color ,$white-color);
-}
-
-.int-header__select-city{
-    @include select(1.6rem);
-}
-
-.int-header__choose-city{
-    @media screen and (min-width: 780px){
-        margin-right: 2.5rem;
+        flex-basis: 60%;
     }
 
-}
+    &__link{
+        display: block;
+    }
 
-.int-header__item--notifications{
-    margin: 0  1.5rem 0 2rem;
+    &__image{
+        display: block;
+        height: 3rem;
+    }
 }
 
 .int-header-person{
@@ -93,25 +84,21 @@
             color: $white-color;
         }
     }
-    @media screen and (min-width: 780px){
+    @media screen and (min-width: $min-tablet-size){
         margin: 0 2rem 0 3rem;
     }
+    &__link{
+        @include person-link(3rem, 3rem);
+    }
+
+    &__image{
+        @include person-image();
+    }
+
+    &__name{
+        padding-right: 0.9rem;
+    }
 }
-
-.int-header-person__link{
-    @include person-link(3rem, 3rem);
-}
-
-.int-header-person__image{
-    @include person-image();
-}
-
-.int-header-person__name{
-    padding-right: 0.9rem;
-}
-
-
-
 
 .int-nav-content{
     background-color: $nav-color;
@@ -121,39 +108,46 @@
     padding: 0;
     max-width: $page-max-width;
     position: relative;
-}
-
-.int-nav__cross{
-    @include cross();
-    display: none;
-}
-.int-nav__list{
-    @include flex(flex-start, center);
-    flex-direction: column;
-    @media screen and (min-width: 780px){
-        flex-direction: row;
+    &__item *{
+        color: $white-color;
     }
-}
-
-.int-nav__link{
-    display: inline-block;
-    padding: 0.95rem;
-}
-
-.int-nav__link--active, .int-nav__link:hover{
-    position: relative;
-    &:before{
-        content: " ";
-        border-top: 5px solid $white-color;
-        border-radius: 0 0 .2rem .2rem;
-        position: absolute;
+    &__cross{
+        @include cross();
+        display: none;
+    }
+    &__list{
+        @include flex(flex-start, center);
+        flex-direction: column;
+        @media screen and (min-width: $min-tablet-size){
+            flex-direction: row;
+        }
+    }
+    &__link{
         display: inline-block;
-        width: 100%;
-        top: 0;
-        left: 0;
+        padding: 0.95rem;
     }
-}
-
-.int-nav__item{
-    padding: 0;
+    &__link--active,
+    &__link:hover{
+        position: relative;
+        &:before{
+            content: " ";
+            border-top: 5px solid $white-color;
+            border-radius: 0 0 .2rem .2rem;
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__item{
+        padding: 0;
+    }
+    &__item *{
+        font-size: 1.8rem;
+        cursor: pointer;
+        @media screen and (min-width: $min-tablet-size){
+            font-size: 1.4rem;
+        }
+    }
 }

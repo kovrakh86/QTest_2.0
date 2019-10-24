@@ -2,56 +2,61 @@
     background-color: $theme-color-light;
     padding: 1.5rem 2.5rem;
     @include flex(flex-start, stretch);
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: $min-tablet-size) {
         padding: 0.5rem 3rem;
     }
     &__icon{
         @include icon(2rem);
     }
-}
-
-.int-post-managment__item {
-    color: $main-font-color;
-    font-size: 1.4rem;
-    @include flex(flex-start, center);
-    &:hover {
-        * {
-            @include int-post-managment--hover();
+    &__item {
+        color: $main-font-color;
+        font-size: 1.4rem;
+        @include flex(flex-start, center);
+        &:hover {
+            * {
+                @include int-post-managment--hover();
+            }
         }
     }
 
-}
-
-.int-post-managment__item--search{
-     position: relative;
- }
-.int-post-managment__input{
-    display: none;
-    @media screen and (min-width:780px){
+    &__item--search{
+        position: relative;
+    }
+    &__input{
         display: inline-block;
-        border: 1px solid $search-border;
-        border-radius: 0.3rem;
-        width: 28rem;
+        border: none;
+        width: 100%;
         line-height: 3.8rem;
         padding: 0 1rem;
+        background-color: inherit;
+        @media screen and (min-width: $min-tablet-size){
+            display: inline-block;
+            border: 1px solid $search-border;
+            background-color: $white-color;
+            border-radius: 0.3rem;
+            width: 28rem;
+            line-height: 3.8rem;
+            padding: 0 1rem;
+        }
+    }
+    &__icon--search{
+        @media screen and (min-width: $min-tablet-size){
+            display: inline-block;
+            position: absolute;
+            right: 1rem;
+        }
+    }
+    &__item--add{
+        margin-left: auto;
+        margin-right: 2rem;
+        font-family: Georgia, Times, "Times New Roman", serif;
+        @media screen and (min-width: $min-tablet-size){
+            margin-right: 8rem;
+        }
+    }
+    &__new-item-text{
+        @include desktop();
     }
 }
-.int-post-managment__icon--search{
-    @media screen and (min-width:780px){
-        display: inline-block;
-        position: absolute;
-        right: 1rem;
-    }
-}
-.int-post-managment__item--add{
-    margin-left: auto;
-    margin-right: 2rem;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    @media screen and (min-width:780px){
-        margin-right: 8rem;
-    }
-}
-.int-post-managment__new-item-text{
-    @include desktop();
-}
+
 

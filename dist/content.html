@@ -81,9 +81,9 @@
                 </div>
             </header>
             
-        <section class="int-main">
+        <div class="int-main">
             <aside  class=" int-aside">
-                        <ul>
+                        <ul class="int-aside__list">
                             <li class="int-aside__item">
                                 <a href="#" class="int-aside__link int-aside__link--strong">
                                     <strong>Submenu</strong>
@@ -93,7 +93,7 @@
                             <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
                             <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
                         </ul>
-                        <ul>
+                        <ul class="int-aside__list">
                             <li class="int-aside__item">
                                 <a href="#" class="int-aside__link int-aside__link--strong">
                                     <strong>Submenu</strong>
@@ -103,7 +103,7 @@
                             <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
                             <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
                         </ul>
-                        <ul>
+                        <ul class="int-aside__list">
                             <li class="int-aside__item">
                                 <a href="#" class="int-aside__link int-aside__link--strong">
                                     <strong>Submenu</strong>
@@ -113,7 +113,7 @@
                             <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
                             <li class="int-aside__item"><a href="#" class="int-aside__link">Submenu item</a></li>
                         </ul>
-                        <ul>
+                        <ul class="int-aside__list">
                             <li class="int-aside__item">
                                 <a href="#" class="int-aside__link int-aside__link--strong">
                                     <strong>Submenu</strong>
@@ -131,7 +131,7 @@
         </div>
 		
             </main>
-        </section>
+        </div>
             <div class="int-footer-content">
                 <footer class="int-footer">
                     <nav class="int-footer__top">
@@ -179,9 +179,7 @@
              document.querySelector('.int-new-item-modal__cross').addEventListener('click', function(){
                  document.querySelector('.int-new-item-modal--tonner').style.visibility = 'hidden';
              });
-//            $jquery(function() {
-//
-//            });
+
         </script>
 
         <script type="text/javascript">
@@ -192,6 +190,17 @@
 
             document.querySelector('.int-nav__cross').addEventListener('click', function(){
                 document.querySelector('.int-nav-content').style.display = 'none';
+            });
+        </script>
+
+        <script>
+            $jquery(function() {
+                $(document).ready(function() {
+                    $('#resizing_select').change(function(){
+                        $("#width_tmp_option").html($('#resizing_select option:selected').text());
+                        $(this).width($("#width_tmp_select").width());
+                    });
+                });
             });
         </script>
     </body>

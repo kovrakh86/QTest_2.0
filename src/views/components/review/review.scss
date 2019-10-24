@@ -4,100 +4,101 @@
      color: $main-font-color;
      font-size: 1.4rem;
      @include flex(space-between, stretch);
-     @media screen and (min-width: 780px){
+     @media screen and (min-width: $min-tablet-size){
          padding: 1.5rem 3rem;
      }
-}
-.int-review__link--person{
-    flex: 0 0 auto;
-    margin-right: 1rem;
-    @include person-link(3rem, 3rem);
-    @media screen and (min-width: 780px){
-        @include person-link(6rem, 6rem);
-        margin-right: 1.5rem;
+    &__link--person{
+        flex: 0 0 auto;
+        margin-right: 1rem;
+        @include person-link(3rem, 3rem);
+        @media screen and (min-width: 400px){
+            @include person-link(5rem, 5rem);
+        }
+        @media screen and (min-width: $min-tablet-size){
+            @include person-link(6rem, 6rem);
+            margin-right: 1.5rem;
+        }
+    }
+    &__photo{
+        @include person-image();
     }
 }
-.int-review__photo{
-    @include person-image();
-}
 
+.int-review-main{
+    &__info,
+    &__review-numbers,
+    &__user-info{
+        @include flex(space-between, center);
+    }
 
-.int-review-main__info,
-.int-review-main__review-numbers,
-.int-review-main__user-info{
-    @include flex(space-between, center);
-}
-
-.int-review-main__name{
-    margin-right: 1rem;
-    color: $main-font-color;
-    font-size: 1.2rem;
-    &:hover, &:focus{
+    &__name{
+        margin-right: 1rem;
         color: $main-font-color;
-        text-decoration: underline;
-        text-shadow:0px 0px 1px $main-font-color;
+        font-size: 1.2rem;
+        &:hover, &:focus{
+            color: $main-font-color;
+            text-decoration: underline;
+            text-shadow:0px 0px 1px $main-font-color;
+        }
+        @media screen and (min-width: $min-tablet-size){
+            margin-right: 2.5rem;
+        }
     }
-    @media screen and (min-width: 780px){
-        margin-right: 2.5rem;
+
+    &__status{
+        display: inline-block;
+        background-color: $body-color;
+        padding: 0.6rem 0.8rem;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        @media screen and (min-width: $min-tablet-size){
+            border-radius: 0.4rem;
+            padding: 0.6rem 1.5rem;
+        }
     }
+
+    &__review-numbers{
+        font-size: 1.2rem;
+    }
+    &__title-item{
+        color: $blue-color;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    &__text{
+        color: $black-color;
+        line-height: 2rem;
+        margin-bottom: .6rem;
+    }
+
 }
 
-.int-review-main__status{
-    display: inline-block;
-    background-color: $body-color;
-    padding: 0.6rem 0.8rem;
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-    @media screen and (min-width: 780px){
-        border-radius: 0.4rem;
-        padding: 0.6rem 1.5rem;
-    }
-}
-
-.int-review-main__review-numbers{
-    font-size: 1.2rem;
-}
-.int-review-main__title-item{
-     color: $blue-color;
-     font-size: 1.6rem;
-     font-weight: 600;
- }
-.int-review-main__text{
-    color: $black-color;
-    line-height: 2rem;
-    margin-bottom: .6rem;
-}
-.int-tags{
-    padding: 0;
-    margin: 0;
-}
 .int-tags{
     display: inline-flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-}
-.int-tags__icon{
-    margin-right: 0.2rem;
-}
-.int-tags__item{
-    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    &__icon{
+        margin-right: 0.2rem;
+    }
+    &__item{
+        list-style-type: none;
 
-    &:after{
-        content: ', ';
-        padding-right: .1rem;
+        &:after{
+            content: ', ';
+            padding-right: .1rem;
+        }
+        &:last-child:after{
+            content: '';
+        }
     }
-    &:last-child:after{
-        content: '';
+    &__link{
+        color: $main-font-color;
+        font-size: 1.2rem;
     }
-}
-.int-tags__link{
-    color: $main-font-color;
-    font-size: 1.2rem;
-}
-.int-tags-icon{
-    color: $main-font-color;
-}
-.int-review-main__tags .int-tags__link:hover{
-    text-decoration: underline;
-    color: $main-font-color;
+    &__link:hover{
+        text-decoration: underline;
+        color: $main-font-color;
+    }
 }

@@ -7,19 +7,17 @@
 .int-aside {
     display: none;
     min-width: 17.1rem;
+    max-width: 17.8125%;
+    width: 100%;
     background-color: $aside-bg-color;
     border-right: 1px solid $aside-border-color;
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: $min-tablet-size) {
         display: block;
-    }
-    @media screen and (min-width: 966px) {
-        min-width: 17.8125%;
     }
 }
 .int-main-content{
     background-color: $white-color;
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: $min-tablet-size) {
         margin-bottom: 9rem;
     }
-
 }

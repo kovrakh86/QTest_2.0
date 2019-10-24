@@ -2,42 +2,46 @@
     padding: 1.2rem 3rem 1.5rem;
     background-color: $white-color;
     @include flex(space-between, stretch);
-    @media screen and (min-width: 780px){
+    @media screen and (min-width: 400px){
+        @include flex(space-around, stretch);
+    }
+    @media screen and (min-width: $min-tablet-size){
         @include flex(center, stretch);
     }
-}
-.int-pagination__button {
-    display: inline-block;
-    border: none;
-    padding: 1.1rem 1.7rem;
-    background: $white-color;
-    color: $theme-color-dark;
-    font-family: sans-serif;
-    font-size: 1.4rem;
-    border: 1px solid $main-font-color;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    &:hover {
-        transform: scale(.95);
+    &__button {
+        display: inline-block;
+        border: none;
+        padding: 1.1rem 1.7rem;
+        background: $white-color;
+        color: $theme-color-dark;
+        font-family: sans-serif;
+        font-size: 1.4rem;
+        border: 1px solid $main-font-color;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        transition: background 250ms ease-in-out, transform 150ms ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        &:hover {
+            transform: scale(.95);
+        }
     }
-}
-.int-pagination__button--prev{
-    @media screen and (min-width: 780px){
-        margin-right: 1rem;
+    &__button--prev{
+        @media screen and (min-width: $min-tablet-size){
+            margin-right: 1rem;
+        }
+    }
+
+    &__button--prev:before{
+        @include arrow();
+        border-bottom: 1px solid $theme-color-dark;
+        border-left: 1px solid $theme-color-dark;
+    }
+    &__button--next:after{
+        @include arrow();
+        border-top: 1px solid $theme-color-dark;
+        border-right: 1px solid $theme-color-dark;
     }
 }
 
-.int-pagination__button--prev:before{
-    @include arrow();
-    border-bottom: 1px solid $theme-color-dark;
-    border-left: 1px solid $theme-color-dark;
-}
-.int-pagination__button--next:after{
-    @include arrow();
-    border-top: 1px solid $theme-color-dark;
-    border-right: 1px solid $theme-color-dark;
-}

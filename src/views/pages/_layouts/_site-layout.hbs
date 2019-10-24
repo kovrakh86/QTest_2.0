@@ -3,7 +3,7 @@
         {{#block "header"}}
             {{> ../../components/header/header}}
         {{/block}}
-        <section class="int-main">
+        <div class="int-main">
             <aside  class=" int-aside">
                 {{#block "aside"}}
                     {{#repeat 4}}
@@ -15,7 +15,7 @@
                 {{#block "main-content"}}
                 {{/block}}
             </main>
-        </section>
+        </div>
         {{#block "footer"}}
             {{> ../../components/footer/footer}}
         {{/block}}
@@ -31,9 +31,7 @@
              document.querySelector('.int-new-item-modal__cross').addEventListener('click', function(){
                  document.querySelector('.int-new-item-modal--tonner').style.visibility = 'hidden';
              });
-//            $jquery(function() {
-//
-//            });
+
         </script>
 
         <script type="text/javascript">
@@ -44,6 +42,17 @@
 
             document.querySelector('.int-nav__cross').addEventListener('click', function(){
                 document.querySelector('.int-nav-content').style.display = 'none';
+            });
+        </script>
+
+        <script>
+            $jquery(function() {
+                $(document).ready(function() {
+                    $('#resizing_select').change(function(){
+                        $("#width_tmp_option").html($('#resizing_select option:selected').text());
+                        $(this).width($("#width_tmp_select").width());
+                    });
+                });
             });
         </script>
     {{/content}}

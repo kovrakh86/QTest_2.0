@@ -124,12 +124,12 @@
         border-bottom: $border-width solid $hover-color;
     }
 }
-@mixin select($padding-right){
+@mixin select($padding){
     border:none;
     position: relative;
     background-color: inherit;
     outline: none;
-    padding-right: $padding-right;
+    padding: 0 $padding;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

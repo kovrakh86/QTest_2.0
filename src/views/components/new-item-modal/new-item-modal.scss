@@ -16,29 +16,30 @@
     width: 90%;
     color: $white-color;
     position: relative;
-    @media screen and (min-width: 780px){
+    @media screen and (min-width: $min-tablet-size){
         width: 40%;
     }
+    &__heading{
+        font-size: 2.5rem;
+    }
+    &__cross{
+        @include cross();
+    }
+    &__form{
+        @include flex(flex-start, stretch);
+        flex-direction: column;
+    }
+    &__form-item{
+        margin: 0.5rem 0;
+    }
+    &__btns{
+        @include flex(space-around, stretch);
+    }
+    &__btn{
+        width: 30%;
+        background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+        border-radius: 6px;
+        margin: 1rem 0;
+    }
 }
-.int-new-item-modal__heading{
-    font-size: 2.5rem;
-}
-.int-new-item-modal__cross{
-    @include cross();
-}
-.int-new-item-modal__form{
-    @include flex(flex-start, stretch);
-    flex-direction: column;
-}
-.int-new-item-modal__form-item{
-    margin: 0.5rem 0;
-}
-.int-new-item-modal__btns{
-    @include flex(space-around, stretch);
-}
-.int-new-item-modal__btn{
-    width: 30%;
-    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-    border-radius: 6px;
-    margin: 1rem 0;
-}
+
