@@ -2,13 +2,15 @@
 @import "../fonts/fontello-icons/css/fontello.css";
 @font-face {
     font-family: 'Open Sans';
-    src: url('../fonts/open-sans/open-sans-v17-latin-regular.woff') format('woff'),
-    url('../fonts/open-sans/open-sans-v17-latin-regular.woff2') format('woff2');
+    font-style: normal;
     font-weight: 400;
+    src: url('../fonts/open-sans/open-sans-v17-latin-regular.woff') format('woff2'),
+    url('../fonts/open-sans/open-sans-v17-latin-regular.woff2') format('woff');
 }
 @font-face {
     font-family: 'Open Sans';
-    src: url('../fonts/open-sans/open-sans-v17-latin-600.woff') format('woff'),
-    url('../fonts/open-sans/open-sans-v17-latin-600.woff2') format('woff2');
+    font-style: normal;
     font-weight: 600;
+    src: url('../fonts/open-sans/open-sans-v17-latin-600.woff') format('woff2'),
+    url('../fonts/open-sans/open-sans-v17-latin-600.woff2') format('woff');
 }
